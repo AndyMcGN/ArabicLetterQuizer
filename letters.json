@@ -1,0 +1,198 @@
+[
+  {
+    "isolated": "ا",
+    "initial": "ا",
+    "middle": "ا",
+    "end": "ا",
+    "name": "alif"
+  },
+  {
+    "isolated": "ب",
+    "initial": "بـ",
+    "middle": "ـبـ",
+    "end": "ـب",
+    "name": "ba"
+  },
+  {
+    "isolated": "ت",
+    "initial": "تـ",
+    "middle": "ـتـ",
+    "end": "ـت",
+    "name": "ta"
+  },
+  {
+    "isolated": "ث",
+    "initial": "ثـ",
+    "middle": "ـثـ",
+    "end": "ـث",
+    "name": "tha"
+  },
+  {
+    "isolated": "ج",
+    "initial": "جـ",
+    "middle": "ـجـ",
+    "end": "ـج",
+    "name": "jim"
+  },
+  {
+    "isolated": "ح",
+    "initial": "حـ",
+    "middle": "ـحـ",
+    "end": "ـح",
+    "name": "ha"
+  },
+  {
+    "isolated": "خ",
+    "initial": "خـ",
+    "middle": "ـخـ",
+    "end": "ـخ",
+    "name": "kha"
+  },
+  {
+    "isolated": "د",
+    "initial": "د",
+    "middle": "د",
+    "end": "د",
+    "name": "dal"
+  },
+  {
+    "isolated": "ذ",
+    "initial": "ذ",
+    "middle": "ذ",
+    "end": "ذ",
+    "name": "thal"
+  },
+  {
+    "isolated": "ر",
+    "initial": "ر",
+    "middle": "ر",
+    "end": "ر",
+    "name": "ra"
+  },
+  {
+    "isolated": "ز",
+    "initial": "ز",
+    "middle": "ز",
+    "end": "ز",
+    "name": "zay"
+  },
+  {
+    "isolated": "س",
+    "initial": "سـ",
+    "middle": "ـسـ",
+    "end": "ـس",
+    "name": "seen"
+  },
+  {
+    "isolated": "ش",
+    "initial": "شـ",
+    "middle": "ـشـ",
+    "end": "ـش",
+    "name": "sheen"
+  },
+  {
+    "isolated": "ص",
+    "initial": "صـ",
+    "middle": "ـصـ",
+    "end": "ـص",
+    "name": "sad"
+  },
+  {
+    "isolated": "ض",
+    "initial": "ضـ",
+    "middle": "ـضـ",
+    "end": "ـض",
+    "name": "dad"
+  },
+  {
+    "isolated": "ط",
+    "initial": "طـ",
+    "middle": "ـطـ",
+    "end": "ـط",
+    "name": "tah"
+  },
+  {
+    "isolated": "ظ",
+    "initial": "ظـ",
+    "middle": "ـظـ",
+    "end": "ـظ",
+    "name": "zah"
+  },
+  {
+    "isolated": "ع",
+    "initial": "عـ",
+    "middle": "ـعـ",
+    "end": "ـع",
+    "name": "ain"
+  },
+  {
+    "isolated": "غ",
+    "initial": "غـ",
+    "middle": "ـغـ",
+    "end": "ـغ",
+    "name": "ghain"
+  },
+  {
+    "isolated": "ف",
+    "initial": "فـ",
+    "middle": "ـفـ",
+    "end": "ـف",
+    "name": "fa"
+  },
+  {
+    "isolated": "ق",
+    "initial": "قـ",
+    "middle": "ـقـ",
+    "end": "ـق",
+    "name": "qaf"
+  },
+  {
+    "isolated": "ك",
+    "initial": "كـ",
+    "middle": "ـكـ",
+    "end": "ـك",
+    "name": "kaf"
+  },
+  {
+    "isolated": "ل",
+    "initial": "لـ",
+    "middle": "ـلـ",
+    "end": "ـل",
+    "name": "lam"
+  },
+  {
+    "isolated": "م",
+    "initial": "مـ",
+    "middle": "ـمـ",
+    "end": "ـم",
+    "name": "meem"
+  },
+  {
+    "isolated": "ن",
+    "initial": "نـ",
+    "middle": "ـنـ",
+    "end": "ـن",
+    "name": "noon"
+  },
+  {
+    "isolated": "ه",
+    "initial": "هـ",
+    "middle": "ـهـ",
+    "end": "ـه",
+    "name": "ha"
+  },
+  {
+    "isolated": "و",
+    "initial": "و",
+    "middle": "و",
+    "end": "و",
+    "name": "waw"
+  },
+  {
+    "isolated": "ي",
+    "initial": "يـ",
+    "middle": "ـيـ",
+    "end": "ـي",
+    "name": "ya"
+  }
+]
