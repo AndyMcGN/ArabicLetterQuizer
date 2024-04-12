@@ -1,198 +1,282 @@
 [
   {
-    "isolated": "ا",
-    "initial": null,
-    "middle": null,
-    "end": null,
-    "name": "alif"
+    "forms": {
+      "isolated": "ا",
+      "initial": null,
+      "middle": null,
+      "end": null,
+      "name": "alif"
+    },
+    "audio": "./assets/audio/alif.mp3"
   },
   {
-    "isolated": "ب",
-    "initial": "بـ",
-    "middle": "ـبـ",
-    "end": "ـب",
-    "name": "ba"
+    "forms": {
+      "isolated": "ب",
+      "initial": "بـ",
+      "middle": "ـبـ",
+      "end": "ـب",
+      "name": "ba"
+    },
+    "audio": "./assets/audio/ba.mp3"
   },
   {
-    "isolated": "ت",
-    "initial": "تـ",
-    "middle": "ـتـ",
-    "end": "ـت",
-    "name": "ta"
+    "forms": {
+      "isolated": "ت",
+      "initial": "تـ",
+      "middle": "ـتـ",
+      "end": "ـت",
+      "name": "ta"
+    },
+    "audio": "./assets/audio/ta.mp3"
   },
   {
-    "isolated": "ث",
-    "initial": "ثـ",
-    "middle": "ـثـ",
-    "end": "ـث",
-    "name": "tha"
+    "forms": {
+      "isolated": "ث",
+      "initial": "ثـ",
+      "middle": "ـثـ",
+      "end": "ـث",
+      "name": "tha"
+    },
+    "audio": "./assets/audio/tha.mp3"
   },
   {
-    "isolated": "ج",
-    "initial": "جـ",
-    "middle": "ـجـ",
-    "end": "ـج",
-    "name": "jim"
+    "forms": {
+      "isolated": "ج",
+      "initial": "جـ",
+      "middle": "ـجـ",
+      "end": "ـج",
+      "name": "jiim"
+    },
+    "audio": "./assets/audio/jiim.mp3"
   },
   {
-    "isolated": "ح",
-    "initial": "حـ",
-    "middle": "ـحـ",
-    "end": "ـح",
-    "name": "ha"
+    "forms": {
+      "isolated": "ح",
+      "initial": "حـ",
+      "middle": "ـحـ",
+      "end": "ـح",
+      "name": "hha"
+    },
+    "audio": "./assets/audio/hha.mp3"
   },
   {
-    "isolated": "خ",
-    "initial": "خـ",
-    "middle": "ـخـ",
-    "end": "ـخ",
-    "name": "kha"
+    "forms": {
+      "isolated": "خ",
+      "initial": "خـ",
+      "middle": "ـخـ",
+      "end": "ـخ",
+      "name": "kha"
+    },
+    "audio": "./assets/audio/kha.mp3"
   },
   {
-    "isolated": "د",
-    "initial": null,
-    "middle": null,
-    "end": null,
-    "name": "dal"
+    "forms": {
+      "isolated": "د",
+      "initial": null,
+      "middle": null,
+      "end": null,
+      "name": "daal"
+    },
+    "audio": "./assets/audio/daal.mp3"
   },
   {
-    "isolated": "ذ",
-    "initial": null,
-    "middle": null,
-    "end": null,
-    "name": "thal"
+    "forms": {
+      "isolated": "ذ",
+      "initial": null,
+      "middle": null,
+      "end": null,
+      "name": "thaal"
+    },
+    "audio": "./assets/audio/thaal.mp3"
   },
   {
-    "isolated": "ر",
-    "initial": null,
-    "middle": null,
-    "end": null,
-    "name": "ra"
+    "forms": {
+      "isolated": "ر",
+      "initial": null,
+      "middle": null,
+      "end": null,
+      "name": "ra"
+    },
+    "audio": "./assets/audio/ra.mp3"
   },
   {
-    "isolated": "ز",
-    "initial": null,
-    "middle": null,
-    "end": null,
-    "name": "zay"
+    "forms": {
+      "isolated": "ز",
+      "initial": null,
+      "middle": null,
+      "end": null,
+      "name": "zay"
+    },
+    "audio": "./assets/audio/zay.mp3"
   },
   {
-    "isolated": "س",
-    "initial": "سـ",
-    "middle": "ـسـ",
-    "end": "ـس",
-    "name": "seen"
+    "forms": {
+      "isolated": "س",
+      "initial": "سـ",
+      "middle": "ـسـ",
+      "end": "ـس",
+      "name": "siin"
+    },
+    "audio": "./assets/audio/siin.mp3"
   },
   {
-    "isolated": "ش",
-    "initial": "شـ",
-    "middle": "ـشـ",
-    "end": "ـش",
-    "name": "sheen"
+    "forms": {
+      "isolated": "ش",
+      "initial": "شـ",
+      "middle": "ـشـ",
+      "end": "ـش",
+      "name": "shiin"
+    },
+    "audio": "./assets/audio/shiin.mp3"
   },
   {
-    "isolated": "ص",
-    "initial": "صـ",
-    "middle": "ـصـ",
-    "end": "ـص",
-    "name": "sad"
+    "forms": {
+      "isolated": "ص",
+      "initial": "صـ",
+      "middle": "ـصـ",
+      "end": "ـص",
+      "name": "saad"
+    },
+    "audio": "./assets/audio/saad.mp3"
   },
   {
-    "isolated": "ض",
-    "initial": "ضـ",
-    "middle": "ـضـ",
-    "end": "ـض",
-    "name": "dad"
+    "forms": {
+      "isolated": "ض",
+      "initial": "ضـ",
+      "middle": "ـضـ",
+      "end": "ـض",
+      "name": "daad"
+    },
+    "audio": "./assets/audio/daad.mp3"
   },
   {
-    "isolated": "ط",
-    "initial": "طـ",
-    "middle": "ـطـ",
-    "end": "ـط",
-    "name": "tah"
+    "forms": {
+      "isolated": "ط",
+      "initial": "طـ",
+      "middle": "ـطـ",
+      "end": "ـط",
+      "name": "taa"
+    },
+    "audio": "./assets/audio/taa.mp3"
   },
   {
-    "isolated": "ظ",
-    "initial": "ظـ",
-    "middle": "ـظـ",
-    "end": "ـظ",
-    "name": "zah"
+    "forms": {
+      "isolated": "ظ",
+      "initial": "ظـ",
+      "middle": "ـظـ",
+      "end": "ـظ",
+      "name": "thaa"
+    },
+    "audio": "./assets/audio/thaa.mp3"
   },
   {
-    "isolated": "ع",
-    "initial": "عـ",
-    "middle": "ـعـ",
-    "end": "ـع",
-    "name": "ain"
+    "forms": {
+      "isolated": "ع",
+      "initial": "عـ",
+      "middle": "ـعـ",
+      "end": "ـع",
+      "name": "ayn"
+    },
+    "audio": "./assets/audio/ayn.mp3"
   },
   {
-    "isolated": "غ",
-    "initial": "غـ",
-    "middle": "ـغـ",
-    "end": "ـغ",
-    "name": "ghain"
+    "forms": {
+      "isolated": "غ",
+      "initial": "غـ",
+      "middle": "ـغـ",
+      "end": "ـغ",
+      "name": "ghayn"
+    },
+    "audio": "./assets/audio/ghayn.mp3"
   },
   {
-    "isolated": "ف",
-    "initial": "فـ",
-    "middle": "ـفـ",
-    "end": "ـف",
-    "name": "fa"
+    "forms": {
+      "isolated": "ف",
+      "initial": "فـ",
+      "middle": "ـفـ",
+      "end": "ـف",
+      "name": "fa"
+    },
+    "audio": "./assets/audio/fa.mp3"
   },
   {
-    "isolated": "ق",
-    "initial": "قـ",
-    "middle": "ـقـ",
-    "end": "ـق",
-    "name": "qaf"
+    "forms": {
+      "isolated": "ق",
+      "initial": "قـ",
+      "middle": "ـقـ",
+      "end": "ـق",
+      "name": "qaf"
+    },
+    "audio": "./assets/audio/qaf.mp3"
   },
   {
-    "isolated": "ك",
-    "initial": "كـ",
-    "middle": "ـكـ",
-    "end": "ـك",
-    "name": "kaf"
+    "forms": {
+      "isolated": "ك",
+      "initial": "كـ",
+      "middle": "ـكـ",
+      "end": "ـك",
+      "name": "kaf"
+    },
+    "audio": "./assets/audio/kaf.mp3"
   },
   {
-    "isolated": "ل",
-    "initial": "لـ",
-    "middle": "ـلـ",
-    "end": "ـل",
-    "name": "lam"
+    "forms": {
+      "isolated": "ل",
+      "initial": "لـ",
+      "middle": "ـلـ",
+      "end": "ـل",
+      "name": "lam"
+    },
+    "audio": "./assets/audio/lam.mp3"
   },
   {
-    "isolated": "م",
-    "initial": "مـ",
-    "middle": "ـمـ",
-    "end": "ـم",
-    "name": "meem"
+    "forms": {
+      "isolated": "م",
+      "initial": "مـ",
+      "middle": "ـمـ",
+      "end": "ـم",
+      "name": "miim"
+    },
+    "audio": "./assets/audio/miim.mp3"
   },
   {
-    "isolated": "ن",
-    "initial": "نـ",
-    "middle": "ـنـ",
-    "end": "ـن",
-    "name": "noon"
+    "forms": {
+      "isolated": "ن",
+      "initial": "نـ",
+      "middle": "ـنـ",
+      "end": "ـن",
+      "name": "nuun"
+    },
+    "audio": "./assets/audio/nuun.mp3"
   },
   {
-    "isolated": "ه",
-    "initial": "هـ",
-    "middle": "ـهـ",
-    "end": "ـه",
-    "name": "ha"
+    "forms": {
+      "isolated": "ه",
+      "initial": "هـ",
+      "middle": "ـهـ",
+      "end": "ـه",
+      "name": "ha"
+    },
+    "audio": "./assets/audio/ha.mp3"
   },
   {
-    "isolated": "و",
-    "initial": null,
-    "middle": null,
-    "end": null,
-    "name": "waw"
+    "forms": {
+      "isolated": "و",
+      "initial": null,
+      "middle": null,
+      "end": null,
+      "name": "waw"
+    },
+    "audio": "./assets/audio/waw.mp3"
   },
   {
-    "isolated": "ي",
-    "initial": "يـ",
-    "middle": "ـيـ",
-    "end": "ـي",
-    "name": "ya"
+    "forms": {
+      "isolated": "ي",
+      "initial": "يـ",
+      "middle": "ـيـ",
+      "end": "ـي",
+      "name": "ya"
+    },
+    "audio": "./assets/audio/ya.mp3"
   }
 ]
