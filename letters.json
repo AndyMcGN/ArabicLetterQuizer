@@ -6,8 +6,7 @@
       "initial": null,
       "middle": null,
       "end": null
-    },
-    "audio": "./assets/audio/alif.mp3"
+    }
   },
   {
     "name": "ba",
@@ -16,8 +15,7 @@
       "initial": "بـ",
       "middle": "ـبـ",
       "end": "ـب"
-    },
-    "audio": "./assets/audio/ba.mp3"
+    }
   },
   {
     "name": "ta",
@@ -26,8 +24,7 @@
       "initial": "تـ",
       "middle": "ـتـ",
       "end": "ـت"
-    },
-    "audio": "./assets/audio/ta.mp3"
+    }
   },
   {
     "name": "tha",
@@ -36,8 +33,7 @@
       "initial": "ثـ",
       "middle": "ـثـ",
       "end": "ـث"
-    },
-    "audio": "./assets/audio/tha.mp3"
+    }
   },
   {
     "name": "jiim",
@@ -46,8 +42,7 @@
       "initial": "جـ",
       "middle": "ـجـ",
       "end": "ـج"
-    },
-    "audio": "./assets/audio/jiim.mp3"
+    }
   },
   {
     "name": "hha",
@@ -56,8 +51,7 @@
       "initial": "حـ",
       "middle": "ـحـ",
       "end": "ـح"
-    },
-    "audio": "./assets/audio/hha.mp3"
+    }
   },
   {
     "name": "kha",
@@ -66,8 +60,7 @@
       "initial": "خـ",
       "middle": "ـخـ",
       "end": "ـخ"
-    },
-    "audio": "./assets/audio/kha.mp3"
+    }
   },
   {
     "name": "daal",
@@ -76,8 +69,7 @@
       "initial": null,
       "middle": null,
       "end": null
-    },
-    "audio": "./assets/audio/daal.mp3"
+    }
   },
   {
     "name": "thaal",
@@ -86,8 +78,7 @@
       "initial": null,
       "middle": null,
       "end": null
-    },
-    "audio": "./assets/audio/thaal.mp3"
+    }
   },
   {
     "name": "ra",
@@ -96,8 +87,7 @@
       "initial": null,
       "middle": null,
       "end": null
-    },
-    "audio": "./assets/audio/ra.mp3"
+    }
   },
   {
     "name": "zay",
@@ -106,8 +96,7 @@
       "initial": null,
       "middle": null,
       "end": null
-    },
-    "audio": "./assets/audio/zay.mp3"
+    }
   },
   {
     "name": "siin",
@@ -116,8 +105,7 @@
       "initial": "سـ",
       "middle": "ـسـ",
       "end": "ـس"
-    },
-    "audio": "./assets/audio/siin.mp3"
+    }
   },
   {
     "name": "shiin",
@@ -126,8 +114,7 @@
       "initial": "شـ",
       "middle": "ـشـ",
       "end": "ـش"
-    },
-    "audio": "./assets/audio/shiin.mp3"
+    }
   },
   {
     "name": "saad",
@@ -136,8 +123,7 @@
       "initial": "صـ",
       "middle": "ـصـ",
       "end": "ـص"
-    },
-    "audio": "./assets/audio/saad.mp3"
+    }
   },
   {
     "name": "daad",
@@ -146,8 +132,7 @@
       "initial": "ضـ",
       "middle": "ـضـ",
       "end": "ـض"
-    },
-    "audio": "./assets/audio/daad.mp3"
+    }
   },
   {
     "name": "taa",
@@ -156,8 +141,7 @@
       "initial": "طـ",
       "middle": "ـطـ",
       "end": "ـط"
-    },
-    "audio": "./assets/audio/taa.mp3"
+    }
   },
   {
     "name": "thaa",
@@ -166,8 +150,7 @@
       "initial": "ظـ",
       "middle": "ـظـ",
       "end": "ـظ"
-    },
-    "audio": "./assets/audio/thaa.mp3"
+    }
   },
   {
     "name": "ayn",
@@ -176,8 +159,7 @@
       "initial": "عـ",
       "middle": "ـعـ",
       "end": "ـع"
-    },
-    "audio": "./assets/audio/ayn.mp3"
+    }
   },
   {
     "name": "ghayn",
@@ -186,8 +168,7 @@
       "initial": "غـ",
       "middle": "ـغـ",
       "end": "ـغ"
-    },
-    "audio": "./assets/audio/ghayn.mp3"
+    }
   },
   {
     "name": "fa",
@@ -196,8 +177,7 @@
       "initial": "فـ",
       "middle": "ـفـ",
       "end": "ـف"
-    },
-    "audio": "./assets/audio/fa.mp3"
+    }
   },
   {
     "name": "qaf",
@@ -206,8 +186,7 @@
       "initial": "قـ",
       "middle": "ـقـ",
       "end": "ـق"
-    },
-    "audio": "./assets/audio/qaf.mp3"
+    }
   },
   {
     "name": "kaf",
@@ -216,8 +195,7 @@
       "initial": "كـ",
       "middle": "ـكـ",
       "end": "ـك"
-    },
-    "audio": "./assets/audio/kaf.mp3"
+    }
   },
   {
     "name": "lam",
@@ -226,8 +204,7 @@
       "initial": "لـ",
       "middle": "ـلـ",
       "end": "ـل"
-    },
-    "audio": "./assets/audio/lam.mp3"
+    }
   },
   {
     "name": "miim",
@@ -236,8 +213,7 @@
       "initial": "مـ",
       "middle": "ـمـ",
       "end": "ـم"
-    },
-    "audio": "./assets/audio/miim.mp3"
+    }
   },
   {
     "name": "nuun",
@@ -246,8 +222,7 @@
       "initial": "نـ",
       "middle": "ـنـ",
       "end": "ـن"
-    },
-    "audio": "./assets/audio/nuun.mp3"
+    }
   },
   {
     "name": "ha",
@@ -256,8 +231,7 @@
       "initial": "هـ",
       "middle": "ـهـ",
       "end": "ـه"
-    },
-    "audio": "./assets/audio/ha.mp3"
+    }
   },
   {
     "name": "waw",
@@ -266,8 +240,7 @@
       "initial": null,
       "middle": null,
       "end": null
-    },
-    "audio": "./assets/audio/waw.mp3"
+    }
   },
   {
     "name": "ya",
@@ -276,7 +249,6 @@
       "initial": "يـ",
       "middle": "ـيـ",
       "end": "ـي"
-    },
-    "audio": "./assets/audio/ya.mp3"
+    }
   }
 ]

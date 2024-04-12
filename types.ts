@@ -1,7 +1,6 @@
 interface Letter {
   name: string;
   forms: LetterForms;
-  audio: string;
 }
 
 interface LetterForms {

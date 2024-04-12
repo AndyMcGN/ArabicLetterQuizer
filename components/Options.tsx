@@ -1,4 +1,3 @@
-import { Text, View } from 'react-native';
 import React, { FC, ReactNode } from 'react';
 import styled from 'styled-components/native';
 

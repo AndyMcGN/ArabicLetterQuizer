@@ -7,6 +7,8 @@ import {
   INCORRECT_ANSWER_BACKGROUND_COLOR,
   NEUTRAL_BACKGROUND_COLOR,
 } from './constants';
+import audios from './audios';
+import { Audio } from 'expo-av';
 
 export default function App() {
   const [currentAnswer, setCurrentAnswer] = useState<string>('');
@@ -17,10 +19,9 @@ export default function App() {
     font-size: 70;
   `;
 
-  function generateQuestionAndAnswer(): { question: string; options: string[]; correctAnswer: string } {
+  function generateQuestionAndAnswer(): { question: string; options: string[]; correctAnswer: string; name: string } {
     const randomIndex = Math.floor(Math.random() * letters.length);
-    const { name: currentLetterName, forms: currentLetterForms } = letters[randomIndex];
-
+    const { name: currentLetterName, forms: currentLetterForms, name } = letters[randomIndex];
     const keys = Object.keys(letters[0].forms) as Array<keyof LetterForms>;
     let currentForm = getRandomLetterForm(currentLetterForms);
     const question = `${currentForm} ${currentLetterName}`;
@@ -36,7 +37,7 @@ export default function App() {
     unshuffledOptions.push(correctAnswer);
     const options = unshuffledOptions.sort(() => Math.random() - 0.5);
 
-    return { question, options, correctAnswer };
+    return { question, options, correctAnswer, name };
   }
 
   function getRandomLetterForm(letter: LetterForms): keyof LetterForms {
@@ -46,12 +47,15 @@ export default function App() {
     return keysWithValue[randomIndex];
   }
 
-  function getNewQuestion() {
-    const { options, question, correctAnswer } = generateQuestionAndAnswer();
+  async function getNewQuestion() {
+    const { options, question, correctAnswer, name } = generateQuestionAndAnswer();
     console.log({ options, question, correctAnswer });
     setCurrentAnswer(correctAnswer);
     setCurrentQuestion(question);
     setOptions(options);
+    const audioString = audios[name as keyof typeof audios];
+    const { sound } = await Audio.Sound.createAsync(audioString);
+    await sound.playAsync();
   }
   useEffect(() => {
     getNewQuestion();
