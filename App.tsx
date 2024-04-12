@@ -19,26 +19,31 @@ export default function App() {
 
   function generateQuestionAndAnswer(): { question: string; options: string[]; correctAnswer: string } {
     const randomIndex = Math.floor(Math.random() * letters.length);
-    const currentLetter = letters[randomIndex];
+    const { name: currentLetterName, forms: currentLetterForms } = letters[randomIndex];
 
-    const keys = Object.keys(letters[0]).filter((key) => key !== 'name') as (keyof Letter)[]; //todo
+    const keys = Object.keys(letters[0].forms) as Array<keyof LetterForms>;
+    let currentForm = getRandomLetterForm(currentLetterForms);
+    const question = `${currentForm} ${currentLetterName}`;
+    const correctAnswer = currentLetterForms[currentForm] as string;
 
-    let currentForm = keys[Math.floor(Math.random() * keys.length)];
-
-    if (!currentLetter[currentForm]) currentForm = 'isolated';
-    const question = `${currentForm} ${currentLetter.name}`;
-    const correctAnswer = currentLetter[currentForm] as string;
-
-    const remainingLetters = letters.filter((letter) => letter !== currentLetter);
+    const remainingLetters = letters.filter((letter) => letter.name !== currentLetterName);
     const shuffledRemainingLetters = remainingLetters.sort(() => Math.random() - 0.5);
 
-    const unshuffledOptions = shuffledRemainingLetters
-      .slice(0, 3)
-      .map((letter) => letter[keys[Math.floor(Math.random() * 3)]] || letter.isolated);
+    const unshuffledOptions = shuffledRemainingLetters.slice(0, 3).map((letter) => {
+      console.log(keys[Math.floor(Math.random() * 3)]);
+      return letter.forms[keys[Math.floor(Math.random() * 3)]] || letter.forms.isolated;
+    });
     unshuffledOptions.push(correctAnswer);
     const options = unshuffledOptions.sort(() => Math.random() - 0.5);
 
     return { question, options, correctAnswer };
+  }
+
+  function getRandomLetterForm(letter: LetterForms): keyof LetterForms {
+    const keys = Object.keys(letter) as Array<keyof LetterForms>;
+    const keysWithValue = keys.filter((key) => letter[key]);
+    const randomIndex = Math.floor(Math.random() * keysWithValue.length);
+    return keysWithValue[randomIndex];
   }
 
   function getNewQuestion() {
