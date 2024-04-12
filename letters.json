@@ -1,9 +1,9 @@
 [
   {
     "isolated": "ا",
-    "initial": "ا",
-    "middle": "ا",
-    "end": "ا",
+    "initial": null,
+    "middle": null,
+    "end": null,
     "name": "alif"
   },
   {
@@ -50,30 +50,30 @@
   },
   {
     "isolated": "د",
-    "initial": "د",
-    "middle": "د",
-    "end": "د",
+    "initial": null,
+    "middle": null,
+    "end": null,
     "name": "dal"
   },
   {
     "isolated": "ذ",
-    "initial": "ذ",
-    "middle": "ذ",
-    "end": "ذ",
+    "initial": null,
+    "middle": null,
+    "end": null,
     "name": "thal"
   },
   {
     "isolated": "ر",
-    "initial": "ر",
-    "middle": "ر",
-    "end": "ر",
+    "initial": null,
+    "middle": null,
+    "end": null,
     "name": "ra"
   },
   {
     "isolated": "ز",
-    "initial": "ز",
-    "middle": "ز",
-    "end": "ز",
+    "initial": null,
+    "middle": null,
+    "end": null,
     "name": "zay"
   },
   {
@@ -183,9 +183,9 @@
   },
   {
     "isolated": "و",
-    "initial": "و",
-    "middle": "و",
-    "end": "و",
+    "initial": null,
+    "middle": null,
+    "end": null,
     "name": "waw"
   },
   {

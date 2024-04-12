@@ -1,7 +1,7 @@
-interface Letter{
-    isolated: string,
-    initial: string,
-    middle: string,
-    end: string,
-    name: string,
+interface Letter {
+  isolated: string;
+  initial: string | null;
+  middle: string | null;
+  end: string | null;
+  name: string;
 }
