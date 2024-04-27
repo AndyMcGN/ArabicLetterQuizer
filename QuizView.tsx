@@ -1,6 +1,5 @@
 import { FunctionComponent, useEffect, useState } from 'react';
 import letters from './letters.json';
-import styled from 'styled-components/native';
 import { Option, Options } from './components/Options';
 import {
   CORRECT_ANSWER_BACKGROUND_COLOR,
@@ -9,7 +8,7 @@ import {
 } from './constants';
 import audios from './audios';
 import { Audio } from 'expo-av';
-import { Button } from 'react-native';
+import { Button, StyleSheet, Text, View } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from './App';
 
@@ -20,9 +19,6 @@ const QuizView: FunctionComponent<Props> = ({ navigation }) => {
   const [currentQuestion, setCurrentQuestion] = useState<string>('');
   const [backgroundColor, setBackgroundColor] = useState<string>(NEUTRAL_BACKGROUND_COLOR);
   const [options, setOptions] = useState<string[]>();
-  const CurrentLetter = styled.Text`
-    font-size: 70;
-  `;
 
   function generateQuestionAndAnswer(): { question: string; options: string[]; correctAnswer: string; name: string } {
     const randomIndex = Math.floor(Math.random() * letters.length);
@@ -94,18 +90,20 @@ const QuizView: FunctionComponent<Props> = ({ navigation }) => {
       }
     });
   }
-  const StyledQuizView = styled.View`
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-  `;
 
   return (
-    <StyledQuizView style={{ backgroundColor: backgroundColor }}>
+    <View style={{ ...styles.container, backgroundColor: backgroundColor }}>
       <Button onPress={() => navigation.navigate('Home')} title="Home" />
-      <CurrentLetter>{currentQuestion}</CurrentLetter>
+      <Text style={styles.currentLetter}>{currentQuestion}</Text>
       <Options>{options?.map((option) => <Option letter={option} handleGuess={handleGuess} />)}</Options>
-    </StyledQuizView>
+    </View>
   );
 };
 export default QuizView;
+
+const styles = StyleSheet.create({
+  container: { flex: 1, justifyContent: 'center', alignItems: 'center' },
+  currentLetter: {
+    fontSize: 40,
+  },
+});

@@ -1,5 +1,4 @@
 import { FunctionComponent } from 'react';
-import styled from 'styled-components/native';
 import QuizView from './QuizView';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
