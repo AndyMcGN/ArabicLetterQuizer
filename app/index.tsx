@@ -1,7 +1,8 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { FunctionComponent } from 'react';
 import { Text, View, StyleSheet, TouchableOpacity, Dimensions, Image } from 'react-native';
-import { Link } from 'expo-router';
+import { router } from 'expo-router';
+import CustomButton from './components/CustomButton';
 
 const Home: FunctionComponent = () => {
   return (
@@ -10,11 +11,8 @@ const Home: FunctionComponent = () => {
       <Text style={styles.title}>
         Welcome to {'\n'} <Text style={styles.appName}>AlphaBetter</Text>
       </Text>
-      <Link href={'/QuizView'} asChild>
-        <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Get Started</Text>
-        </TouchableOpacity>
-      </Link>
+      <CustomButton text="Get Started" handlePress={() => router.push('/QuizView')} />
+      <CustomButton text="SignUp" handlePress={() => router.push('/auth/SignUp')} />
     </View>
   );
 };
@@ -39,19 +37,5 @@ const styles = StyleSheet.create({
   },
   appName: {
     fontSize: 40,
-  },
-
-  button: {
-    paddingHorizontal: 30,
-    paddingVertical: 10,
-    backgroundColor: '#ce1fa2',
-    borderRadius: Math.round(Dimensions.get('window').width + Dimensions.get('window').height) / 2,
-    width: Dimensions.get('window').width * 0.5,
-  },
-  buttonText: {
-    fontSize: 20,
-    textAlign: 'center',
-    color: 'white',
-    fontWeight: 'bold',
   },
 });
