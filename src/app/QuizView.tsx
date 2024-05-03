@@ -1,17 +1,16 @@
 import { FunctionComponent, useEffect, useState } from 'react';
-import letters from './letters.json';
+import letters from './assets/letters.json';
 import { Option, Options } from './components/Options';
 import {
   CORRECT_ANSWER_BACKGROUND_COLOR,
   INCORRECT_ANSWER_BACKGROUND_COLOR,
   NEUTRAL_BACKGROUND_COLOR,
 } from './constants';
-import audios from './audios';
+import audios from './assets/audios';
 import { Audio } from 'expo-av';
 import { StyleSheet, Text, View, Vibration } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootTabsParamList } from './App';
-import Icon from 'react-native-vector-icons/Ionicons';
 
 type Props = NativeStackScreenProps<RootTabsParamList, 'Quiz'>;
 

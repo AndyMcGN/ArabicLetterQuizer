@@ -1,8 +1,8 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { FunctionComponent } from 'react';
 import { Text, View, StyleSheet, TouchableOpacity, Dimensions, Image } from 'react-native';
-import { RootStackParamList } from './App';
-type Props = NativeStackScreenProps<RootStackParamList, 'Home'>;
+import { RootTabsParamList } from './App';
+type Props = NativeStackScreenProps<RootTabsParamList, 'Home'>;
 
 const Home: FunctionComponent<Props> = ({ navigation }) => {
   return (

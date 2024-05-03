@@ -1,9 +1,9 @@
 {
   "name": "arabicalphabetpractice",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
+  "main": "./src/app/App",
   "scripts": {
-    "start": "expo start",
+    "start": "expo start -c",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web"

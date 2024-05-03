@@ -2,6 +2,7 @@ import { FunctionComponent } from 'react';
 import QuizView from './QuizView';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { registerRootComponent } from 'expo';
 
 import Home from './Home';
 
@@ -13,7 +14,7 @@ const Tab = createBottomTabNavigator<RootTabsParamList>();
 const App: FunctionComponent = () => {
   return (
     <NavigationContainer>
-      <Tab.Navigator initialRouteName="Home" screenOptions={{ headerShown: false,  }}>
+      <Tab.Navigator initialRouteName="Home" screenOptions={{ headerShown: false }}>
         <Tab.Screen name="Home" component={Home} />
         <Tab.Screen name="Quiz" component={QuizView} />
       </Tab.Navigator>
@@ -21,4 +22,4 @@ const App: FunctionComponent = () => {
   );
 };
 
-export default App;
+export default registerRootComponent(App);
