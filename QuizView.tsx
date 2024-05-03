@@ -8,7 +8,7 @@ import {
 } from './constants';
 import audios from './audios';
 import { Audio } from 'expo-av';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Vibration } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootTabsParamList } from './App';
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -89,6 +89,7 @@ const QuizView: FunctionComponent<Props> = ({ navigation }) => {
           getNewQuestion(); // todo : move this out of here somehow
         }, 500);
       } else {
+        Vibration.vibrate();
         setBackgroundColor(INCORRECT_ANSWER_BACKGROUND_COLOR);
         setTimeout(() => {
           setBackgroundColor(NEUTRAL_BACKGROUND_COLOR);
@@ -99,7 +100,7 @@ const QuizView: FunctionComponent<Props> = ({ navigation }) => {
 
   return (
     <View style={{ ...styles.container, backgroundColor: backgroundColor }}>
-      <View style={{ ...styles.score}}>
+      <View style={{ ...styles.score }}>
         <Text style={styles.score}>Current Score: </Text>
         <Text style={styles.score}> {currentScore} </Text>
       </View>
@@ -117,6 +118,6 @@ const styles = StyleSheet.create({
   },
   score: {
     fontSize: 30,
-    alignItems: 'center'
+    alignItems: 'center',
   },
 });
