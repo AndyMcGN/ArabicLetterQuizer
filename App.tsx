@@ -1,22 +1,22 @@
 import { FunctionComponent } from 'react';
 import QuizView from './QuizView';
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
 import Home from './Home';
 
-export type RootStackParamList = {
-    Home: undefined;
-    Quiz: undefined;
-}
-const Stack = createNativeStackNavigator<RootStackParamList>();
-
+export type RootTabsParamList = {
+  Home: undefined;
+  Quiz: undefined;
+};
+const Tab = createBottomTabNavigator<RootTabsParamList>();
 const App: FunctionComponent = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home" screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Quiz" component={QuizView} />
-      </Stack.Navigator>
+      <Tab.Navigator initialRouteName="Home" screenOptions={{ headerShown: false,  }}>
+        <Tab.Screen name="Home" component={Home} />
+        <Tab.Screen name="Quiz" component={QuizView} />
+      </Tab.Navigator>
     </NavigationContainer>
   );
 };

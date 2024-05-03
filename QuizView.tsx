@@ -10,9 +10,10 @@ import audios from './audios';
 import { Audio } from 'expo-av';
 import { Button, StyleSheet, Text, View } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { RootStackParamList } from './App';
+import { RootTabsParamList } from './App';
+import Icon from 'react-native-vector-icons/Ionicons';
 
-type Props = NativeStackScreenProps<RootStackParamList, 'Quiz'>;
+type Props = NativeStackScreenProps<RootTabsParamList, 'Quiz'>;
 
 const QuizView: FunctionComponent<Props> = ({ navigation }) => {
   const [currentAnswer, setCurrentAnswer] = useState<string>('');
@@ -93,7 +94,7 @@ const QuizView: FunctionComponent<Props> = ({ navigation }) => {
 
   return (
     <View style={{ ...styles.container, backgroundColor: backgroundColor }}>
-      <Button onPress={() => navigation.navigate('Home')} title="Home" />
+      <Icon name="home" size={30} onPress={() => navigation.navigate('Home')} />
       <Text style={styles.currentLetter}>{currentQuestion}</Text>
       <Options>{options?.map((option) => <Option letter={option} handleGuess={handleGuess} />)}</Options>
     </View>
