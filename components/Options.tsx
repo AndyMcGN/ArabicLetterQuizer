@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { AnimatableNumericValue, StyleSheet, Text, View } from 'react-native';
 
 export const Options = (props: { children: ReactNode }) => {
   return <View style={styles.options}>{props.children}</View>;
@@ -21,19 +21,16 @@ const styles = StyleSheet.create({
   options: {
     height: '50%',
     width: '100%',
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
     alignContent: 'space-around',
   },
   option: {
-    height: '20%',
-    width: '40%',
     backgroundColor: 'green',
-    borderRadius: 5,
+    borderRadius: 9999,
+    margin: 15,
+    padding: 10,
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     alignItems: 'center',
   },
   text: {

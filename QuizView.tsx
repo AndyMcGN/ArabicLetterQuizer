@@ -8,7 +8,7 @@ import {
 } from './constants';
 import audios from './audios';
 import { Audio } from 'expo-av';
-import { Button, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootTabsParamList } from './App';
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -20,6 +20,7 @@ const QuizView: FunctionComponent<Props> = ({ navigation }) => {
   const [currentQuestion, setCurrentQuestion] = useState<string>('');
   const [backgroundColor, setBackgroundColor] = useState<string>(NEUTRAL_BACKGROUND_COLOR);
   const [options, setOptions] = useState<string[]>();
+  const [currentScore, setCurrentScore] = useState(0);
 
   function generateQuestionAndAnswer(): { question: string; options: string[]; correctAnswer: string; name: string } {
     const randomIndex = Math.floor(Math.random() * letters.length);
@@ -71,8 +72,12 @@ const QuizView: FunctionComponent<Props> = ({ navigation }) => {
 
   function handleGuess(guessedLetter: string) {
     const isCorrectGuess = checkAnswer(guessedLetter);
-
+    updateScore(isCorrectGuess);
     buzzBackground(isCorrectGuess);
+  }
+
+  function updateScore(isAnswerCorrect: boolean) {
+    setCurrentScore((prevScore) => (isAnswerCorrect ? prevScore + 1 : 0));
   }
 
   function buzzBackground(isAnswerCorrect: boolean) {
@@ -94,7 +99,10 @@ const QuizView: FunctionComponent<Props> = ({ navigation }) => {
 
   return (
     <View style={{ ...styles.container, backgroundColor: backgroundColor }}>
-      <Icon name="home" size={30} onPress={() => navigation.navigate('Home')} />
+      <View style={{ ...styles.score}}>
+        <Text style={styles.score}>Current Score: </Text>
+        <Text style={styles.score}> {currentScore} </Text>
+      </View>
       <Text style={styles.currentLetter}>{currentQuestion}</Text>
       <Options>{options?.map((option) => <Option letter={option} handleGuess={handleGuess} />)}</Options>
     </View>
@@ -103,8 +111,12 @@ const QuizView: FunctionComponent<Props> = ({ navigation }) => {
 export default QuizView;
 
 const styles = StyleSheet.create({
-  container: { flex: 1, justifyContent: 'center', alignItems: 'center' },
+  container: { flex: 1, justifyContent: 'space-around', alignItems: 'center', padding: 20 },
   currentLetter: {
     fontSize: 40,
+  },
+  score: {
+    fontSize: 30,
+    alignItems: 'center'
   },
 });
