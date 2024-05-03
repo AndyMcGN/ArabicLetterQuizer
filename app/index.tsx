@@ -1,19 +1,20 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { FunctionComponent } from 'react';
 import { Text, View, StyleSheet, TouchableOpacity, Dimensions, Image } from 'react-native';
-import { RootTabsParamList } from './App';
-type Props = NativeStackScreenProps<RootTabsParamList, 'Home'>;
+import { Link } from 'expo-router';
 
-const Home: FunctionComponent<Props> = ({ navigation }) => {
+const Home: FunctionComponent = () => {
   return (
     <View style={styles.container}>
       <Image source={require('./assets/logo.png')} />
       <Text style={styles.title}>
         Welcome to {'\n'} <Text style={styles.appName}>AlphaBetter</Text>
       </Text>
-      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Quiz')}>
-        <Text style={styles.buttonText}>Get Started</Text>
-      </TouchableOpacity>
+      <Link href={'/QuizView'} asChild>
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.buttonText}>Get Started</Text>
+        </TouchableOpacity>
+      </Link>
     </View>
   );
 };
@@ -27,7 +28,10 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     marginTop: '30%',
     marginBottom: '30%',
+    backgroundColor: 'white',
+    height: '100%',
   },
+
   title: {
     fontSize: 30,
     color: '#443549',

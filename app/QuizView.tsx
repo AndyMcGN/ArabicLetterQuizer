@@ -8,13 +8,12 @@ import {
 } from './constants';
 import audios from './assets/audios';
 import { Audio } from 'expo-av';
-import { StyleSheet, Text, View, Vibration } from 'react-native';
-import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { RootTabsParamList } from './App';
+import { StyleSheet, Text, View, Vibration, TouchableOpacity } from 'react-native';
+import { capitalise } from './utils';
+import { Link } from 'expo-router';
+import Icon from 'react-native-vector-icons/Ionicons';
 
-type Props = NativeStackScreenProps<RootTabsParamList, 'Quiz'>;
-
-const QuizView: FunctionComponent<Props> = ({ navigation }) => {
+const QuizView: FunctionComponent = () => {
   const [currentAnswer, setCurrentAnswer] = useState<string>('');
   const [currentQuestion, setCurrentQuestion] = useState<string>('');
   const [backgroundColor, setBackgroundColor] = useState<string>(NEUTRAL_BACKGROUND_COLOR);
@@ -26,7 +25,7 @@ const QuizView: FunctionComponent<Props> = ({ navigation }) => {
     const { name: currentLetterName, forms: currentLetterForms, name } = letters[randomIndex];
     const keys = Object.keys(letters[0].forms) as Array<keyof LetterForms>;
     let currentForm = getRandomLetterForm(currentLetterForms);
-    const question = `${currentForm} ${currentLetterName}`;
+    const question = `${capitalise(currentForm)} ${capitalise(currentLetterName)}`;
     const correctAnswer = currentLetterForms[currentForm] as string;
 
     const remainingLetters = letters.filter((letter) => letter.name !== currentLetterName);
@@ -99,12 +98,20 @@ const QuizView: FunctionComponent<Props> = ({ navigation }) => {
 
   return (
     <View style={{ ...styles.container, backgroundColor: backgroundColor }}>
+      <Link href={'/'} asChild>
+        <TouchableOpacity>
+          <Icon name="home" size={30} />
+        </TouchableOpacity>
+      </Link>
+
       <View style={{ ...styles.score }}>
         <Text style={styles.score}>Current Score: </Text>
         <Text style={styles.score}> {currentScore} </Text>
       </View>
       <Text style={styles.currentLetter}>{currentQuestion}</Text>
-      <Options>{options?.map((option) => <Option letter={option} handleGuess={handleGuess} />)}</Options>
+      <Options>
+        {options?.map((option, index) => <Option letter={option} handleGuess={handleGuess} key={index} />)}
+      </Options>
     </View>
   );
 };
