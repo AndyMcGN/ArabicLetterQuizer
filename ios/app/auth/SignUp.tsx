@@ -10,7 +10,10 @@ interface FormData {
 
 const SignUp = () => {
   const [formData, setFormData] = useState<FormData>({ email: '', password: '' });
-  function submitForm(formData: FormData) {}
+  function submitForm(formData: FormData) {
+
+    
+  }
   return (
     <View style={styles.container}>
       <Text>SignUp</Text>
